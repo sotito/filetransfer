@@ -1,0 +1,100 @@
+<section data-ng-controller="SysusersController">
+    <div class="page-header">
+        <h1>New Sysuser</h1>
+    </div>
+    <div class="col-md-12">
+        <form class="form-horizontal" data-ng-submit="create()" novalidate>
+            <fieldset>
+
+                <div class="row">
+                    <div class="col-sm-6 text-center">
+                        <i class="glyphicon glyphicon-user"></i>
+
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label" for="firstName">First Name</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="firstName" id="firstName">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label" for="lastName">Last Name</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="lastName" id="lastName">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label" for="userName">user Name</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="userName" id="userName">
+                            </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="password">password</label>
+                                <div class="controls">
+                                    <input type="text" data-ng-model="password" id="password">
+                                </div>
+                             </div>
+
+
+
+
+                    </div>
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+
+
+                    </div>
+                    <div class="col-sm-6">
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-6">
+
+
+                    </div>
+                    <div class="col-sm-6">
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-default">
+                </div>
+				<div data-ng-show="error" class="text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+            </fieldset>
+        </form>
+    </div>
+</section>
